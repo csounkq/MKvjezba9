@@ -1,0 +1,235 @@
+
+
+body { 
+	margin:0; 
+	font-family: 'Ubuntu', sans-serif;
+	background-color:   #afd4ec  ;
+	text-align:center;
+	justify-content: center;
+}
+
+h1 {
+	font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+	font-size: 25px;
+	text-transform: none ;
+}
+.pozadinskaboja {
+	background-color: rgba(255, 255, 255, 0.5);
+	line-height: 15px;
+	width: auto;
+	padding: 20px;	
+}
+.bojafonta {
+	color: #224a66;	
+}
+
+
+p{
+	color: black;
+	font-size: 20px;
+	margin-left:350px;
+    margin-right:350px;
+    text-align:center;
+	background-color: rgba(37, 87, 119, 0.5);
+	width: auto;
+	padding: 20px;
+}
+
+p:nth-child(odd) {
+	color: white;
+    background-color: black;
+    opacity: 0.5;
+	width: auto;
+	padding: 20px;
+}
+
+
+nav {
+  margin:0 auto;
+  width:100%;
+  height:auto;
+  display:inline-block;
+  font-family: 'Seymour One', sans-serif;
+  text-transform: uppercase ;
+  background: #4d95c3 ;
+}
+
+nav ul {
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  float:center;
+  display:inline-block;
+}
+
+nav ul li {
+  position:relative;
+  margin:0 20px 0 0;
+  float:center;
+  display:inline-block;
+}
+
+li > a:after { content: " »"; }
+
+li > a:only-child:after { content: ''; }
+
+nav ul li a {
+  padding:20px;
+  display:inline-block;
+  color:white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  opacity:0.5;
+}
+
+nav ul li ul {
+  display:none;
+  position:absolute;
+  left:0;
+  background: #4d95c3 ;
+  float:left;
+}
+
+nav ul li ul li {
+  width:100%;
+  border-bottom:1px solid rgba(255,255,255,.5);
+}
+
+nav ul li:hover ul {
+  display:block;
+}
+
+
+img {
+	display: inline;
+	height: 200px;
+	width: auto;
+	padding: 20px;
+	
+  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m:
+    left   var(--_i,0%) top    var(--_g),
+    bottom var(--_i,0%) left   var(--_g),
+    top    var(--_i,0%) right  var(--_g),
+    right  var(--_i,0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  filter: grayscale(1);
+  transition: .5s linear;
+  cursor: pointer;
+}
+
+img:hover {
+  --_i: 10%;
+  filter: grayscale(0);
+}
+
+.img {
+	padding-top: 150px;
+}
+
+.slike {
+	height: 250px;
+	width: auto;
+	padding: 10px;
+	filter: none;
+	transition: none;
+	mask: none;
+}
+
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 stretch;
+}
+
+.krugovi {
+  position: relative;
+}
+
+.krugovi div{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.krugovi div:nth-child(1) {
+	background-color:  #224a66;
+	top: 100px;
+	left: 50px;
+}
+.krugovi div:nth-child(2) {
+	background-color:  #476f8c ;
+	top: 300px;
+	left: 160px;
+}
+.krugovi div:nth-child(3) {
+	background-color:   #7095ae ;
+	top: 100px;
+	left: 270px;
+}
+.krugovi div:nth-child(4) {
+	background-color:  #224a66;
+	top: 100px;
+	right: 50px;
+}
+.krugovi div:nth-child(5) {
+	background-color:  #476f8c  ;
+	top: 300px;
+	right: 160px;
+}
+.krugovi div:nth-child(6) {
+	background-color:  #7095ae ;
+	top: 100px;
+	right: 270px;	
+}
+
+@keyframes kretanje1 {
+  0%   { top: 100px; }
+  50%  { top: 300px; }
+  100% { top: 100px; }
+}
+
+@keyframes kretanje2 {
+  0%   { top: 300px; }
+  50%  { top: 100px; }
+  100% { top: 300px; }
+}
+
+#prvi {
+	animation: kretanje1 3s 2s 5 ease;	
+}
+
+#drugi {
+	animation: kretanje2 3s 2s 5 ease;	
+}
+
+#treci {
+	animation: kretanje1 3s 2s 5 ease;	
+}
+
+#cetvrti {
+	animation: kretanje1 3s 2s 5 ease;
+}
+
+#peti {
+	animation: kretanje2 3s 2s 5 ease;
+}
+
+#sesti {
+	animation: kretanje1 3s 2s 5 ease;
+}
+
+embed {
+	
+	padding: 20px;
+	padding-bottom: 10px;
+	border-right:dotted;
+	border-left:dotted;
+	
+} 
